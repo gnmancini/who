@@ -1,5 +1,5 @@
 [Unit]
-Description=Security monitoring
+Description=Who is logged monitoring
 Documentation=https://github.com/gnmancini/who
 After=network-online.target
 Wants=network-online.target
