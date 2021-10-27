@@ -2,7 +2,7 @@ import os
 import time
 import dbus
 
-def chequeo():
+def check():
     loop = True
     while (loop):  
         result = os.popen('w | tail -n +3 | wc -l').read()
@@ -24,4 +24,4 @@ def intruder_message():
     # Imprimimos el ID de esta notificacion
     #print ("El ID es: ", notify_id)
 
-chequeo()
+check()
