@@ -16,8 +16,8 @@ def intruder_message():
     bus = dbus.SessionBus()
     notify_object = bus.get_object('org.freedesktop.Notifications','/org/freedesktop/Notifications')
     notify_interface = dbus.Interface(notify_object,'org.freedesktop.Notifications')
-    titulo = "IMPORTANTE"
-    cuerpo = "Hay mas de una session SSH en el sistema"
+    titulo = "IMPORTANT!!!"
+    cuerpo = "There is a different user logged in the system using ssh."
     tiempo = 10000 # milisegundos. Si especificamos 0, se espera a que el usuario lo cierre
     notify_id = notify_interface.Notify("DBus Test", 0, "gtk-ok", titulo, cuerpo, "", {}, tiempo)
  
