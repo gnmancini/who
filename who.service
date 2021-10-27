@@ -4,7 +4,7 @@ Documentation=https://github.com/gnmancini/who
 After=network-online.target
 Wants=network-online.target
 [Service]
-ExecStart=/usr/bin/python3.8 ~/who/who.py
+ExecStart=/usr/bin/python3.8 /home/username/who/who.py
 Restart=on-failure
 RestartSec=3
 RestartPreventExitStatus=3
