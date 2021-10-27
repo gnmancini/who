@@ -5,9 +5,9 @@ import dbus
 def chequeo():
     loop = True
     while (loop):  
-        result = os.popen('w | tail -n +3 | wc -l').read()
+        result = os.popen('w | grep -v $itsme | tail -n +3 | wc -l').read()
         #print(result)
-        if int(result) > 1 :
+        if int(result) >= 1 :
             print(result)
             intruder_message()
         time.sleep(60)
@@ -24,5 +24,5 @@ def intruder_message():
     # Imprimimos el ID de esta notificacion
     #print ("El ID es: ", notify_id)
 
-
+itsme = os.popen('whoami').read()
 chequeo()
