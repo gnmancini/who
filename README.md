@@ -17,5 +17,5 @@ This small program checks if there is a different user than the one logged and s
 1. systemctl --user status who.service
 
 # Important:
-Use this program under your own risk. 
+Use this program at your own risk. 
 This is just a test.
