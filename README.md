@@ -7,7 +7,7 @@ This small program checks if there is a different user than the one logged and s
 
 # Installation:
 1. cd ~
-1. git clone git@github.com:gnmancini/who.git
+1. git clone https://github.com/gnmancini/who.git
 1. cd who
 1. mkdir -p ~/.config/systemd/user/
 1. cp ~/who/who.service ~/.config/systemd/user/
